@@ -1,34 +1,57 @@
-// 
-import React, { Component } from 'react'
+// // 
+import React from 'react'
+import SearchBar from './Components/SearchBar'
+import SearchBarArray from './SearchBarArray'
+import UpdatedArraySearch from './UpdatedArraySearch'
 
-export default class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state={
-      value: '',
-      list: [1,2,3,4,5]
-    }
-     
-  }
-  onAddItem = () =>{
-    this.setState(state=>{
-      const list = state.list.concat(this.state.value)
-
-      return {
-        list, value:''
-      };
-    });
-  };
- 
-  }
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+const App =() =>{
+return(
+    <div>
+    <SearchBar />
+    {/* <SearchBarArray />
+    <UpdatedArraySearch /> */}
+    </div>
+)
 }
+
+export default App
+
+
+
+
+
+
+
+// import React, { Component } from 'react'
+
+// export default class App extends Component {
+//   constructor(props) {
+//     super(props)
+//     this.state={
+//       value: '',
+//       list: [1,2,3,4,5]
+//     }
+     
+//   }
+//   onAddItem = () =>{
+//     this.setState(state=>{
+//       const list = state.list.concat(this.state.value)
+
+//       return {
+//         list, value:''
+//       };
+//     });
+//   };
+ 
+//   }
+//   render() {
+//     return (
+//       <div>
+        
+//       </div>
+//     )
+//   }
+// }
 
 
 
