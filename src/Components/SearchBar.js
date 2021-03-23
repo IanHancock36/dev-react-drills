@@ -1,8 +1,8 @@
 import React,{useState}from 'react'
 import './SearchBar.css'
-const products =['toothpaste','mouthwash','water','sushi']
 
-const SearchBar = () => {
+
+const SearchBar = (props) => {
     const[searchValue,setSearchValue] =useState('')
     // searchValue is state basically
 const handleInputChange =(event)=> {
@@ -12,16 +12,21 @@ const handleInputChange =(event)=> {
 const handleClearClick=()=> {
 setSearchValue('text cleared')
 }
-products.map((product)=> {
- return product.toUpperCase()
-})
+
 const shouldDisplayButton = searchValue.length > 0 
 console.log(shouldDisplayButton)
 
+const filterProducts = props.products.filter((product)=>{
+  return product.includes(searchValue)
+})
+  
     return <div>
         <input type="text" value={searchValue} onChange={handleInputChange}placeholder='whoa man' />
         {shouldDisplayButton &&  <button onClick={handleClearClick}>Clear</button>}
        
+       {filterProducts.map((product)=>{
+         return <li key={product}> {product} </li>
+       })}
        
         
         </div>
