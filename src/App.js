@@ -6,6 +6,7 @@ import UpdatedArraySearch from './UpdatedArraySearch'
 import App2 from './App2'
 
 import App3 from './App3'
+import OnCLick from './OnCLick'
 
 
 
@@ -16,9 +17,9 @@ return(
     {/* <SearchBar products={['toothpaste','mouthwash','water','sushi','toothbrush']} /> */}
     {/* <SearchBarArray />
     <UpdatedArraySearch /> */}
-    <App3 />
+    {/* <App3 /> */}
     {/* <SearchBar products={['basketball','football','baseball','soccer']} /> */}
-
+    <OnCLick />
     </div>
 )
 }
