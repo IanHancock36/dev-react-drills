@@ -4,18 +4,21 @@ import SearchBar from './Components/SearchBar'
 import SearchBarArray from './SearchBarArray'
 import UpdatedArraySearch from './UpdatedArraySearch'
 import App2 from './App2'
-// import App3 from './App3'
 
-const products =['toothpaste','mouthwash','water','sushi','toothbrush']
+import App3 from './App3'
+
+
 
 const App =() =>{
 return(
     <div>
         {/* <App2 /> */}
-    <SearchBar products={products} />
+    {/* <SearchBar products={['toothpaste','mouthwash','water','sushi','toothbrush']} /> */}
     {/* <SearchBarArray />
     <UpdatedArraySearch /> */}
-    {/* <App3 /> */}
+    <App3 />
+    {/* <SearchBar products={['basketball','football','baseball','soccer']} /> */}
+
     </div>
 )
 }
