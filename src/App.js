@@ -7,7 +7,7 @@ import App2 from './App2'
 
 import App3 from './App3'
 import OnCLick from './OnCLick'
-
+import ControlledComponents from './ControlledComponents'
 
 
 const App =() =>{
@@ -20,6 +20,7 @@ return(
     {/* <App3 /> */}
     {/* <SearchBar products={['basketball','football','baseball','soccer']} /> */}
     <OnCLick />
+    <ControlledComponents />
     </div>
 )
 }
