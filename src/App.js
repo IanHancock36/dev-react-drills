@@ -1,26 +1,21 @@
 // // 
 import React from 'react'
-import SearchBar from './Components/SearchBar'
-import SearchBarArray from './SearchBarArray'
-import UpdatedArraySearch from './UpdatedArraySearch'
-import App2 from './App2'
+// import SearchBar from './Components/SearchBar'
+// import SearchBarArray from './SearchBarArray'
+// import UpdatedArraySearch from './UpdatedArraySearch'
+// import App2 from './App2'
 
-import App3 from './App3'
-import OnCLick from './OnCLick'
-import ControlledComponents from './ControlledComponents'
-
+// import App3 from './App3'
+// import OnCLick from './OnCLick'
+// import ControlledComponentWithHooks from './ControlledComponentWithHooks'
+import App3Repeated  from './App3Repeated'
 
 const App =() =>{
 return(
     <div>
-        {/* <App2 /> */}
-    {/* <SearchBar products={['toothpaste','mouthwash','water','sushi','toothbrush']} /> */}
-    {/* <SearchBarArray />
-    <UpdatedArraySearch /> */}
-    {/* <App3 /> */}
-    {/* <SearchBar products={['basketball','football','baseball','soccer']} /> */}
-    <OnCLick />
-    <ControlledComponents />
+       
+    <App3Repeated />
+
     </div>
 )
 }
