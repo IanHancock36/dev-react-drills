@@ -36,9 +36,9 @@ const App3Repeated = function () {
   
   const [text,setText] = useState('The Button has not Been clicked')
   const [count, setCount] = useState(0)
-   useEffect(() => {
+  //  useEffect(() => {
      
-   })
+  //  })
 
   return (
     <div style ={{textAlign: 'center'}}>

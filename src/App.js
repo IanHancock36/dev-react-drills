@@ -9,13 +9,20 @@ import React from 'react'
 // import OnCLick from './OnCLick'
 // import ControlledComponentWithHooks from './ControlledComponentWithHooks'
 import App3Repeated  from './App3Repeated'
+import TripsmeupObject from './CarListItems'
+import CarListItems from './CarListItems'
+import CarList from './CarListItems'
+import App5 from './App5'
 
 const App =() =>{
 return(
     <div>
-       
-    <App3Repeated />
+{/*        
+    <App3Repeated /> */}
 
+    {/* <TripsmeupAPP />  */}
+{/* <CarList />  */}
+<App5 />
     </div>
 )
 }
